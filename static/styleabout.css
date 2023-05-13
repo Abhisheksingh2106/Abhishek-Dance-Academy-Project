@@ -1,0 +1,192 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&family=ZCOOL+XiaoWei&display=swap');
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+.container{
+    background-color: rgb(129, 129, 192);
+    margin: 0px auto;
+    padding: 0px;
+    display: block;
+    width: 100%;
+    height: 82vh;
+    font-family: 'Yeon Sung', cursive;
+}
+
+.aboutpage{
+    margin: 0px auto;
+    padding: 40px;
+    color: #37317a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30vh;
+    background: url(/static/about.jpg) no-repeat center/cover;
+}
+
+h1{
+    font-size: 2.5rem;;
+}
+
+.aboutpage p{
+    font-size: 1.5rem;
+}
+
+.info {
+    margin-top: 25px;
+    align-items: center;
+    display: block;
+    justify-content: center;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
+.info h3{
+    margin: 10px;
+    text-align: center;
+}
+
+.info p{
+    margin: 10px;
+    text-align: inherit;
+}
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&family=ZCOOL+XiaoWei&display=swap');
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+.container {
+    background-color: rgb(129, 129, 192);
+    margin: 0px auto;
+    padding: 0px;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Yeon Sung', cursive;
+}
+
+.aboutpage {
+    margin: 0px auto;
+    padding: 40px;
+    color: #37317a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30vh;
+    background: url(/static/about.jpg) no-repeat center/cover;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.aboutpage:hover {
+    transform: scale(1.1);
+}
+
+.aboutpage:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.aboutpage:hover:before {
+    opacity: 1;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 30px;
+    text-align: center;
+    animation: bounceInDown 1s ease;
+}
+
+.aboutpage p {
+    font-size: 1.5rem;
+    text-align: center;
+    animation: bounceInLeft 1s ease;
+}
+
+.info {
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'ZCOOL XiaoWei', serif;
+    animation: bounceInRight 1s ease;
+}
+
+.info h3 {
+    margin: 10px;
+    text-align: center;
+}
+
+.info p {
+    margin: 10px;
+    text-align: inherit;
+}
+
+@keyframes bounceInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-1000px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(30px);
+    }
+    80% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-1000px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(30px);
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounceInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(1000px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(-30px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

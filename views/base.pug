@@ -1,0 +1,22 @@
+doctype html 
+html
+  head
+    title Abhishek  Dance Academy
+    block scripts
+    block style
+      script(src='/jquery.js')
+  body
+    nav#navbar 
+        ul 
+            div#logo 
+                img(src="/static/logo.png") 
+                | ADA 
+            li #[a(href="/") Home]
+            li #[a(href="/about") About]
+            li #[a(href="/services") Services] 
+            li #[a(href="/classinfo") Class Info] 
+            li #[a(href="/contact") Contact]
+
+    block content
+    footer#footer 
+        | Copyright © 2022 AbhishekDanceAcademy.com | All rights reserved.

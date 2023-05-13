@@ -1,0 +1,46 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css
+
+block  content 
+    section#introSection 
+        div Welcome to Abhishek's Dance Academy 
+        div.small Eat Sleep Dance Repeat 
+
+    section#missionSection 
+        h2 Our Mission
+        div.card 
+            h3 Dance Perfection
+            div.card-box 
+                div.card-img
+                    img(src="/static/img1.png")
+                div.card-content 
+                    p This is the best Dance Academy of the universe.
+        div.card 
+            h3 Dance the way you like 
+            div.card-box 
+                div.card-img
+                    img(src="/static/img2.png")
+                div.card-content 
+                    p This is the best Dance Academy of the universe.
+        div.card 
+            h3 Expert Teaching 
+            div.card-box 
+                div.card-img
+                    img(src="/static/img3.png")
+                div.card-content 
+                    p This is the best Dance Academy of the universe.
+
+    section#sponsorsSection 
+        h2 Our Sponsors 
+        div#sponsers 
+            img(src="/static/logo1.png", alt="Sponser Image", class="spImages")
+            img(src="/static/logo m.png", alt="Sponser Image", class="spImages")
+            img(src="/static/logo hp.png", alt="Sponser Image", class="spImages")
+            img(src="/static/logo3.png", alt="Sponser Image", class="spImages")
+

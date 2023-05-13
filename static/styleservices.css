@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&family=ZCOOL+XiaoWei&display=swap');
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+.container {
+    background-color: rgb(194, 194, 235);
+    margin: 0px auto;
+    padding: 0px;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Yeon Sung', cursive;
+}
+
+.service {
+    margin: 0px auto;
+    padding: 40px;
+    color: #daf0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 30vh;
+    background: url(/static/services.jpg) no-repeat center/cover;
+}
+
+#box-service {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.box {
+    border: 4px solid purple;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 8px 15px;
+    padding: 40px 15px;
+}
+
+.box h3,
+p {
+    text-align: center;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.box:hover h3 {
+    color: purple;
+}
